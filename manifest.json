@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "LPU Internet Login AutoFill",
+    "description": "This extension autofills the login page of LPU internet with credentials",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "js": ["scripts/content.js"],
+            "matches": [
+                "https://internet.lpu.in/*"
+            ]
+        }
+    ]
+}
