@@ -23,11 +23,11 @@ Locate the content.js file within the scripts folder.
 Edit content.js: Update the following lines with your actual college login credentials:
 
 ```js
-username.value = "<YOUR USERNAME>";
-password.value = "<YOUR PASSWORD>";
+username.value = "<Your Registration Number>";
+password.value = "<Your Internet Password>";
 ```
 
-Replace <code>YOUR USERNAME</code> with your registration number and <code>YOUR PASSWORD</code> with your password, omitting the angular brackets.
+Replace <code>Your Registration Number</code> with your registration number and <code>Your Internet Password</code> with your password, omitting the angular brackets.
 > [!CAUTION]
 > Storing credentials in plain text within the code presents a security risk.
 

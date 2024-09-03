@@ -4,15 +4,7 @@ const saveInfo = document.querySelector("input[name='saveinfo']");
 const agreePolicy = document.querySelector("#agreepolicy");
 const loginBtn = document.querySelector("#loginbtn");
 
-if(username)
-    username.value = "<YOUR USERNAME>";
-if(password)
-    password.value = "<YOUR PASSWORD>";
-if(loginBtn)
-    loginBtn.disabled = false;
-if(agreePolicy)
-    agreePolicy.checked = false;
-setTimeout(() => {
+const login = () => {
     if(saveInfo)
         saveInfo.checked = true;
     if(agreePolicy)
@@ -20,4 +12,20 @@ setTimeout(() => {
     if(loginBtn)
         loginBtn.click();
     console.log("Logged in");
-}, 500);
+}
+
+if(loginBtn)
+{
+    loginBtn.parentElement.innerHTML += `<button id='autoBtn' class='buttonstyle'>Auto</button>`;
+    const autoBtn = document.getElementById('autoBtn');
+    autoBtn.addEventListener('click', login);
+}
+
+if(username)
+    username.value = "<Your Registration Number>";
+if(password)
+    password.value = "<Your Internet Password>";
+if(loginBtn)
+    loginBtn.disabled = false;
+if(agreePolicy)
+    agreePolicy.checked = false;
